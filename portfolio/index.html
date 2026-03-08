@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Chesta Solanki</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="noise-overlay"></div>
+    <header class="nav">
+      <div class="nav__brand">
+        <span class="nav__logo">root@cyber</span>
+        <span class="nav__tag">/portfolio</span>
+      </div>
+      <nav class="nav__links">
+        <a href="#about">About</a>
+        <a href="#tools">Tools</a>
+        <a href="#certs">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero__content">
+          <p class="hero__eyebrow">CHESTA SOLANKI // PURPLE TEAM</p>
+          <h1 class="hero__title">
+            <span class="hero__title-main">Portfolio</span>
+            <span class="hero__title-glitch" aria-hidden="true">Portfolio</span>
+          </h1>
+          <p class="hero__subtitle">
+            I am a purple team member who loves both attacking and defending
+            systems, blending offensive techniques with strong defensive
+            strategies.
+          </p>
+          <div class="hero__cta-row">
+            <a href="#contact" class="btn btn--primary">Contact Me</a>
+            <a href="#certs" class="btn btn--ghost">View Certificates</a>
+          </div>
+          <div class="hero__meta">
+            <div class="hero__meta-item">
+              <span class="meta-label">Focus</span>
+              <span class="meta-value">Purple Team · Offense &amp; Defense</span>
+            </div>
+            <div class="hero__meta-item">
+              <span class="meta-label">Tech Stack</span>
+              <span class="meta-value"
+                >Python · C · C++ · JavaScript · React.js</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="terminal">
+            <div class="terminal__header">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="terminal__title">threat_scan.sh</span>
+            </div>
+            <div class="terminal__body" id="terminal-output">
+              <p>$ initializing security scan...</p>
+              <p>$ loading threat intel feeds...</p>
+              <p>$ hardening perimeter...</p>
+              <p class="terminal__accent">
+                &gt; status: <span class="terminal__status">secure</span>
+              </p>
+              <p class="terminal__cursor">&block;</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section section--split">
+        <div class="section__label">ABOUT</div>
+        <div class="section__content">
+          <h2 class="section__title">Who I Am</h2>
+          <p class="section__text">
+            I am <strong>Chesta Solanki</strong>, a B.Tech student at
+            <strong>G.L. Bajaj Institute of Technology and Management</strong>,
+            passionate about cybersecurity and hands-on learning.
+          </p>
+          <p class="section__text">
+            As a <strong>purple team member</strong>, I enjoy both red team
+            (offensive) and blue team (defensive) work—using attacker mindset to
+            improve defenses. I have completed <strong>6 certifications</strong>
+            so far and keep exploring new tools, attack paths, and defensive
+            strategies.
+          </p>
+          <div class="about__grid">
+            <div class="about__card">
+              <h3>Security &amp; Tools</h3>
+              <ul>
+                <li>Port scanning &amp; enumeration with nmap &amp; Zenmap</li>
+                <li>Internet-wide search &amp; reconnaissance using Shodan</li>
+                <li>Social engineering &amp; phishing labs (SET, zphisher)</li>
+                <li>Vulnerability scanning with Nessus &amp; OpenVAS</li>
+              </ul>
+            </div>
+            <div class="about__card">
+              <h3>Technical Skills</h3>
+              <ul>
+                <li>Linux basics &amp; terminal usage</li>
+                <li>Python, C, and C++ programming</li>
+                <li>JavaScript &amp; React.js for web development</li>
+                <li>Problem solving, labs, and CTF-style learning</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TOOLS -->
+      <section id="tools" class="section">
+        <div class="section__label">TOOLKIT</div>
+        <div class="section__content">
+          <h2 class="section__title">Tools I Work With</h2>
+          <p class="section__text">
+            Here are some of the security and development tools I have learned
+            and used in my projects and labs.
+          </p>
+          <div class="tools-grid">
+            <div class="tool-card tool-card--offensive">
+              <h3>Offensive / Recon</h3>
+              <ul>
+                <li>nmap &amp; Zenmap (network scanning)</li>
+                <li>Shodan (internet-wide search)</li>
+                <li>Social-Engineer Toolkit (SET)</li>
+                <li>zphisher (phishing practice)</li>
+              </ul>
+            </div>
+            <div class="tool-card tool-card--defensive">
+              <h3>Scanning &amp; Defense</h3>
+              <ul>
+                <li>Nessus vulnerability scanner</li>
+                <li>OpenVAS vulnerability scanner</li>
+                <li>Basic hardening &amp; verification</li>
+                <li>Log reading &amp; basic analysis</li>
+              </ul>
+            </div>
+            <div class="tool-card tool-card--analysis">
+              <h3>Development &amp; Scripting</h3>
+              <ul>
+                <li>Python, C, and C++</li>
+                <li>JavaScript &amp; React.js</li>
+                <li>Linux command line</li>
+                <li>Small scripts &amp; automation experiments</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATES -->
+      <section id="certs" class="section">
+        <div class="section__label">CERTIFICATES</div>
+        <div class="section__content">
+          <h2 class="section__title">Certifications &amp; Achievements</h2>
+          <p class="section__text">
+            I have completed <strong>5 certifications</strong> related to
+            cybersecurity and technology. Browse through this slideshow to see
+            some of the areas I have studied and practiced.
+          </p>
+
+          <div class="slider" aria-label="Certificates slideshow">
+            <button class="slider__nav slider__nav--prev" id="prev-cert">
+              &#10094;
+            </button>
+            <div class="slider__viewport">
+              <div class="slider__track" id="cert-track">
+                <!-- Slides injected via JavaScript -->
+              </div>
+            </div>
+            <button class="slider__nav slider__nav--next" id="next-cert">
+              &#10095;
+            </button>
+          </div>
+
+          <div class="slider__dots" id="cert-dots" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section section--split">
+        <div class="section__label">CONTACT</div>
+        <div class="section__content">
+          <h2 class="section__title">Let’s Connect</h2>
+          <p class="section__text">
+            Whether you want to discuss cybersecurity, projects, or
+            opportunities, feel free to reach out.
+          </p>
+          <div class="contact__grid">
+            <div class="contact__item">
+              <span class="meta-label">Email</span>
+              <a
+                href="mailto:youremail@example.com"
+                class="contact__link contact__link--primary"
+                >chestasolanki664@gmail.com</a
+              >
+            </div>
+            <div class="contact__item">
+              <span class="meta-label">GitHub</span>
+              <a
+                href="https://github.com/your-github-username"
+                target="_blank"
+                rel="noreferrer"
+                class="contact__link"
+                >https://github.com/chestasolanki</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        &copy; <span id="year"></span> Portfolio of Chesta Solanki. 
+
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
