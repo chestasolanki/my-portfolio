@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Chesta Solanki</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div class="noise-overlay"></div>
+  <header class="nav">
+    <div class="nav__brand">
+      <span class="nav__logo">root@cyber</span>
+      <span class="nav__tag">/portfolio</span>
+    </div>
+    <nav class="nav__links">
+      <a href="#about">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#tools">Tools</a>
+      <a href="#certs">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow">SYSTEM ACCESS GRANTED // USER: CHESTA SOLANKI</p>
+        <h1 class="hero__title">
+          <span class="hero__title-main">&gt;_ Hey, I am <br /> Chesta Solanki<span class="cursor-blink">|</span></span>
+          <span class="hero__title-glitch" aria-hidden="true">&gt;_ Hey, I am <br /> Chesta Solanki</span>
+        </h1>
+        <p class="hero__subtitle">
+          Curious mind in the Purple Team. Enthusiastic learner exploring the digital frontiers of offensive methodology
+          and defensive architecture. Initiating secure session...
+        </p>
+        <div class="hero__cta-row">
+          <a href="#contact" class="btn btn--primary">Contact Me</a>
+          <a href="#certs" class="btn btn--ghost">View Certificates</a>
+        </div>
+        <div class="hero__meta">
+          <div class="hero__meta-item">
+            <span class="meta-label">Focus</span>
+            <span class="meta-value">Purple Team · Offense &amp; Defense</span>
+          </div>
+          <div class="hero__meta-item">
+            <span class="meta-label">Tech Stack</span>
+            <span class="meta-value">Python · C · C++ · JavaScript · React.js</span>
+          </div>
+        </div>
+        <div class="hero__scroll">
+          <div class="scroll-mouse">
+            <div class="scroll-wheel"></div>
+          </div>
+          <span>Scroll to explore</span>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="terminal">
+          <div class="terminal__header">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+            <span class="terminal__title">threat_scan.sh</span>
+          </div>
+          <div class="terminal__body" id="terminal-output">
+            <p>$ initializing security scan...</p>
+            <p>$ loading threat intel feeds...</p>
+            <p>$ hardening perimeter...</p>
+            <p class="terminal__accent">
+              &gt; status: <span class="terminal__status">secure</span>
+            </p>
+            <p class="terminal__cursor">&block;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME (SCROLLABLE) -->
+    <section id="resume" class="section reveal">
+      <div class="section__label">SYSTEM.RESUME</div>
+      <div class="section__content">
+        <h2 class="section__title">Operation History</h2>
+        <p class="section__text">
+          Accessing operational logs and engagement history...
+        </p>
+
+        <div class="resume-container">
+          <div class="resume-scroll-area">
+
+            <div class="resume-item reveal delay-1">
+              <div class="resume-item__header">
+                <h3 class="resume-item__title">B.Tech in Computer Science</h3>
+                <span class="resume-item__date">2023 - Present</span>
+              </div>
+              <div class="resume-item__org">G.L. Bajaj Institute of Technology and Management</div>
+              <ul class="resume-item__details">
+                <li>Focusing on core computer science subjects with a specialization in cybersecurity protocols.</li>
+                <li>Actively engaging in CTF (Capture The Flag) competitions and practical lab environments.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item reveal delay-2">
+              <div class="resume-item__header">
+                <h3 class="resume-item__title">Purple Team Enthusiast</h3>
+                <span class="resume-item__date">Ongoing</span>
+              </div>
+              <div class="resume-item__org">Independent Researcher & Learner</div>
+              <ul class="resume-item__details">
+                <li>Conducting simulated attacks (Red Team) to understand vulnerabilities and exploitation techniques.
+                </li>
+                <li>Implementing defensive measures (Blue Team) like log analysis, firewall configuration, and system
+                  hardening.</li>
+                <li>Mastering tools like Nmap, Wireshark, Metasploit, and SIEM solutions.</li>
+              </ul>
+            </div>
+
+            <!-- More items can be added here -->
+            <div class="resume-item border-none reveal delay-3">
+              <div class="resume-item__header">
+                <h3 class="resume-item__title">Cybersecurity Certifications</h3>
+                <span class="resume-item__date">2025 - 2026</span>
+              </div>
+              <div class="resume-item__org">Various Issuers</div>
+              <ul class="resume-item__details">
+                <li>Acquired 6 specialized certifications covering Network, Cloud, and Foundation security.</li>
+                <li>Demonstrated proficiency through hands-on labs and theoretical assessments.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section--split reveal">
+      <div class="section__label">ABOUT</div>
+      <div class="section__content">
+        <h2 class="section__title">Who I Am</h2>
+        <div id="typing-container" class="typing-container section__text"
+          style="font-size: 1.05rem; line-height: 1.8; min-height: 250px;">
+          <span id="typed-text"></span><span class="cursor-blink">|</span>
+        </div>
+        <!-- Hidden fallback text for accessibility and text source -->
+        <div id="about-text-source" style="display: none;">
+          I am Chesta Solanki, a B.Tech student at G.L. Bajaj Institute of Technology and Management, passionate about
+          cybersecurity and hands-on learning. As a purple team member, I enjoy blending offensive techniques with
+          strong defensive strategies.
+          Demonstrated expertise in developing full-stack web applications and
+          API-powered systems using Django and modern frontend technologies, supported by a strong grasp of Data
+          Structures and Algorithms in C++. Skilled in React, HTML, CSS, and JavaScript for building responsive and
+          high-performance user interfaces.
+          Currently learning Cybersecurity and have gained foundational
+          knowledge in Machine Learning, focusing on building secure, scalable, and data-driven applications while
+          following industry best practices for maintainable software development.
+        </div>
+        <div class="about__grid">
+          <div class="about__card reveal delay-1">
+            <h3>Security &amp; Tools</h3>
+            <ul>
+              <li>Port scanning &amp; enumeration with nmap &amp; Zenmap</li>
+              <li>Internet-wide search &amp; reconnaissance using Shodan</li>
+              <li>Social engineering &amp; phishing labs (SET, zphisher)</li>
+              <li>Vulnerability scanning with Nessus &amp; OpenVAS</li>
+            </ul>
+          </div>
+          <div class="about__card reveal delay-2">
+            <h3>Core Competencies</h3>
+            <ul>
+              <li>Full-Stack Web Development</li>
+              <li>Data Structures & Algorithms (C++)</li>
+              <li>API Development & Integration</li>
+              <li>Secure Software Development Practices</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLS & SKILLS -->
+    <section id="tools" class="section reveal">
+      <div class="section__label">TOOLKIT</div>
+      <div class="section__content">
+        <h2 class="section__title">System Capabilities</h2>
+        <p class="section__text">
+          Loaded modules and frameworks available for deployment.
+        </p>
+        <div class="tools-grid">
+          <div class="tool-card tool-card--offensive reveal delay-1">
+            <h3>Programming Languages</h3>
+            <ul>
+              <li>Python</li>
+              <li>C++</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="tool-card tool-card--analysis reveal delay-2">
+            <h3>Frameworks &amp; Libraries</h3>
+            <ul>
+              <li>React.js</li>
+              <li>Django</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+          <div class="tool-card tool-card--defensive reveal delay-3">
+            <h3>Machine Learning &amp; Data Science</h3>
+            <ul>
+              <li>Pandas, NumPy</li>
+              <li>Matplotlib, Seaborn</li>
+              <li>Scikit-learn, PyTorch</li>
+            </ul>
+          </div>
+          <div class="tool-card tool-card--offensive reveal delay-4" style="grid-column: span 3; text-align: center;">
+            <h3>Tools &amp; Platforms</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px;">VS Code, Nmap, Zenmap, Shodan,
+              Nessus, OpenVAS, Metasploit, Wireshark</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <div class="section__label">PROJECTS</div>
+      <div class="section__content">
+        <h2 class="section__title">Initiated Operations</h2>
+        <p class="section__text">
+          Executing project files... Accessing recent development and security implementations.
+        </p>
+
+        <div class="slider" aria-label="Projects slideshow">
+          <button class="slider__nav slider__nav--prev" id="prev-project">
+            &#10094;
+          </button>
+          <div class="slider__viewport">
+            <div class="slider__track" id="project-track">
+              <!-- Slides injected via JavaScript -->
+            </div>
+          </div>
+          <button class="slider__nav slider__nav--next" id="next-project">
+            &#10095;
+          </button>
+        </div>
+
+        <div class="slider__dots" id="project-dots" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certs" class="section reveal">
+      <div class="section__label">CERTIFICATES</div>
+      <div class="section__content">
+        <h2 class="section__title">Certifications &amp; Achievements</h2>
+        <p class="section__text">
+          I have completed <strong>5 certifications</strong> related to
+          cybersecurity and technology. Browse through this slideshow to see
+          some of the areas I have studied and practiced.
+        </p>
+
+        <div class="slider" aria-label="Certificates slideshow">
+          <button class="slider__nav slider__nav--prev" id="prev-cert">
+            &#10094;
+          </button>
+          <div class="slider__viewport">
+            <div class="slider__track" id="cert-track">
+              <!-- Slides injected via JavaScript -->
+            </div>
+          </div>
+          <button class="slider__nav slider__nav--next" id="next-cert">
+            &#10095;
+          </button>
+        </div>
+
+        <div class="slider__dots" id="cert-dots" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--split reveal">
+      <div class="section__label">CONTACT</div>
+      <div class="section__content">
+        <h2 class="section__title">Let’s Connect</h2>
+        <p class="section__text">
+          Whether you want to discuss cybersecurity, projects, or
+          opportunities, feel free to reach out.
+        </p>
+        <div class="contact__grid">
+          <div class="contact__item reveal delay-1">
+            <span class="meta-label">Email</span>
+            <a href="mailto:chestasolanki664@gmail.com"
+              class="contact__link contact__link--primary">chestasolanki664@gmail.com</a>
+          </div>
+          <div class="contact__item reveal delay-2">
+            <span class="meta-label">GitHub</span>
+            <a href="https://github.com/chestasolanki" target="_blank" rel="noreferrer"
+              class="contact__link">github.com/chestasolanki</a>
+          </div>
+          <div class="contact__item reveal delay-3">
+            <span class="meta-label">LinkedIn</span>
+            <a href="https://linkedin.com/in/chesta-solanki" target="_blank" rel="noreferrer"
+              class="contact__link">linkedin.com/in/chesta-solanki</a>
+          </div>
+          <div class="contact__item reveal delay-4">
+            <span class="meta-label">Phone Number</span>
+            <a href="tel:+917455042260" class="contact__link">+91 7455042260</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      &copy; <span id="year"></span> Portfolio of Chesta Solanki.
+
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
